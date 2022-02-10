@@ -15,5 +15,7 @@ publish: clean
 test:
 	sh tests/test.sh
 
+test2:
+	shelltest -s bash,zsh,dash ./tests2
 uninstall:
 	pip uninstall autoenv
