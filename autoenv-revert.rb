@@ -1,8 +1,8 @@
 class AutoenvRevert < Formula
   desc "Per-project, per-directory shell environments with cache & revert."
   homepage "https://github.com/alissa-huskey/autoenv"
-  url "https://github.com/alissa-huskey/autoenv/archive/refs/tags/v0.3.1.zip"
-  sha256 "4935d302b73576c3f43cee0021f582cb294557d52559d7827e2373cce3c6a504"
+  url "https://github.com/alissa-huskey/autoenv/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "d2a309caef6b3ba7050fa8c42287ea2956237c1f3762a350c1fe41c389612f4f"
   license "MIT"
   head "https://github.com/alissa-huskey/autoenv.git", branch: "master"
 
