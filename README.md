@@ -1,7 +1,14 @@
 
-# Autoenv: Directory-based Environments ![Build Status](https://github.com/hyperupcall/autoenv/actions/workflows/ci.yml/badge.svg)
+# Autoenv: Directory-based Environments 
 
 Magic per-project shell environments
+
+This is a fork of [autoenv](https://github.com/hyperupcall/autoenv) that
+provides:
+
+* Colorized and generally nicer messages and and configurable env file
+  previews.
+* A `autoenv_cache` function that caches a variable and reverts it on leaving.
 
 **Note**: you should probably use [direnv](https://direnv.net) instead.
 Simply put, it is higher quality software. But, autoenv is still great,
@@ -43,30 +50,19 @@ Follow the white rabbit:
 
 ## Install
 
-Install it easily:
+**Note:** Thise instructions are for installing this fork. You probably want
+the [main repo](https://github.com/hyperupcall/autoenv).
 
 ### MacOS using Homebrew
 
-    $ brew install autoenv
-    $ echo "source $(brew --prefix autoenv)/activate.sh" >> ~/.bash_profile
+    $ brew tap alissa-huskey/autoenv https://github.com/alissa-huskey/autoenv
+    $ brew install alissa-huskey/autoenv/autoenv-revert
+    $ echo "source $(brew --prefix autoenv-revert)/activate.sh" >> ~/.bash_profile
 
 ### Using Git
 
-    $ git clone git://github.com/inishchith/autoenv.git ~/.autoenv
+    $ git clone git://github.com/alissa-huskey/autoenv.git ~/.autoenv
     $ echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
-
-### Using AUR
-
-Arch Linux users can install
-[autoenv](https://aur.archlinux.org/packages/autoenv/) or
-[autoenv-git](https://aur.archlinux.org/packages/autoenv-git/) with
-their favorite AUR helper.
-
-You need to source activate.sh in your bashrc afterwards:
-
-    $ echo 'source /usr/share/autoenv/activate.sh' >> ~/.bashrc
-
-Note that there was previously a [pip](https://pypi.org/project/autoenv) installation option, but it is no longer recommended as the package is severely out of date
 
 ## Configuration
 
