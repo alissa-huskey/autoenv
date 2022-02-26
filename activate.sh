@@ -346,7 +346,7 @@ autoenv_cache() {
 autoenv_revert() {
   local expr
 
-  echo "${AUTOENV_CACHED}" | command sed 's/:::/\n/' | while read -r expr ; do
+  echo "${AUTOENV_CACHED}" | command sed 's/:::/\n/g' | while read -r expr ; do
     eval "${expr}"
   done
 
